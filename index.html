@@ -1,1 +1,665 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Водопроводчик Пловдив – аварии, течове, отпушване | Аква Майстор
+    </title>
+    <meta
+      name="description"
+      content="Водопроводчик в Пловдив за аварии, течове и запушвания. Бърза реакция във всички квартали, ясна цена преди започване и гаранция за работата."
+    />
+    <meta name="theme-color" content="#0B3C5D" />
+    <link rel="canonical" href="https://example.com/" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="bg_BG" />
+    <meta
+      property="og:title"
+      content="Водопроводчик Пловдив – бърза помощ при аварии | Аква Майстор"
+    />
+    <meta
+      property="og:description"
+      content="Аварии, течове, запушвания и монтажи във всички квартали на Пловдив. Ясна цена и гаранция."
+    />
+    <meta property="og:url" content="https://example.com/" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%231CA7C9' d='M16 3c5 7 9 11.5 9 16a9 9 0 0 1-18 0c0-4.500 4-9 9-16z'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "Аква Майстор",
+        "url": "https://example.com/",
+        "telephone": "+359888123456",
+        "areaServed": { "@type": "City", "name": "Пловдив" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Пловдив",
+          "addressCountry": "BG"
+        },
+        "openingHours": "Mo-Su 00:00-23:59"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Колко бързо идвате при авария?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "При спешно обаждане се стремя да съм на адреса до 30 минути в рамките на Пловдив. До по-отдалечените села времето е малко по-дълго."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Как се определя цената?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Преди да започна, ви казвам цената за конкретната работа. Тя не се променя, освен ако открия допълнителна повреда, която първо обсъждаме с вас."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Давате ли гаранция?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. За извършената работа има гаранция, а за вложените материали важи гаранцията на производителя."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Работите ли през нощта и в празници?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да, приемам аварийни повиквания всеки ден, включително нощем, в почивни и празнични дни."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Към съдържанието</a>
+
+    <!-- SVG икони (спрайт) -->
+    <svg
+      width="0"
+      height="0"
+      class="visually-hidden"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" />
+      </symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24">
+        <path d="M3 12V4h8l10 10-8 8L3 12z" />
+        <circle cx="7.500" cy="8.500" r="1.200" />
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6l8-3z" />
+        <path d="M8.500 12l2.500 2.500 4.500-5" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path
+          d="M12 21s7-6.200 7-11.500a7 7 0 0 0-14 0C5 14.800 12 21 12 21z"
+        />
+        <circle cx="12" cy="9.500" r="2.500" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
+        />
+      </symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24">
+        <path d="M12 3l10 18H2L12 3z" />
+        <path d="M12 10v5M12 18v.01" />
+      </symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24">
+        <path
+          d="M12 3c4 5.500 7 8.500 7 12a7 7 0 0 1-14 0c0-3.500 3-6.500 7-12z"
+        />
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="10.500" cy="10.500" r="6.500" />
+        <path d="M15.500 15.500L21 21" />
+      </symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24">
+        <path
+          d="M15 4a5 5 0 0 0-4.500 7L3 18.500 5.500 21l7.500-7.500A5 5 0 0 0 20 9l-3 3-3-1-1-3 3-3a5 5 0 0 0-1-1z"
+        />
+      </symbol>
+      <symbol id="i-bath" viewBox="0 0 24 24">
+        <path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3z" />
+        <path d="M6 12V6a2 2 0 0 1 4 0M6 19l-1 2M18 19l1 2" />
+      </symbol>
+      <symbol id="i-pipe" viewBox="0 0 24 24">
+        <path d="M3 7h10a4 4 0 0 1 4 4v10" />
+        <path d="M3 4v6M14 21h6" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M8 12.500l2.800 2.800L16 9.500" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="M3 7l9 6 9-6" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#hero" aria-label="Аква Майстор – начало">
+          <svg
+            class="logo-mark"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              fill="currentColor"
+              d="M16 3c5 7 9 11.500 9 16a9 9 0 0 1-18 0c0-4.500 4-9 9-16z"
+            />
+          </svg>
+          <span>Аква Майстор демо</span>
+        </a>
+
+        <nav id="site-nav" class="nav" aria-label="Основна навигация">
+          <ul class="nav-list">
+            <li><a href="#uslugi">Услуги</a></li>
+            <li><a href="#za-nas">Защо аз</a></li>
+            <li><a href="#ceni">Цени</a></li>
+            <li><a href="#rajoni">Райони</a></li>
+            <li><a href="#vuprosi">Въпроси</a></li>
+            <li><a href="#kontakti">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn-cta header-call" href="tel:+359888123456">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#i-phone" />
+          </svg>
+          <span>0888 123 456</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Меню</span>
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <!-- Фонова снимка: сложи файловете в папка images/ -->
+        <picture class="hero-bg">
+          <img
+            src="images/hero-img.webp"
+            srcset="images/hero-img.webp, images/hero-img.webp"
+            sizes="100vw"
+            width="1600"
+            height="900"
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              Водопроводчик в Пловдив: бърза помощ при аварии, течове и
+              запушвания
+            </h1>
+            <p class="lead">
+              Идвам бързо във всички квартали на Пловдив. Работя чисто, с
+              гаранция и обявявам цената, преди да започна.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-cta btn-lg" href="tel:+359888123456"
+                >Обади се сега: 0888 123 456</a
+              >
+              <a class="btn btn-ghost btn-lg" href="#zayavka"
+                >Изпрати запитване</a
+              >
+            </div>
+
+            <ul class="trust-list">
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-clock" /></svg
+                >Бърза реакция при аварии
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-tag" /></svg
+                >Ясна цена преди започване
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-shield" /></svg
+                >Гаранция за работата
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-pin" /></svg
+                >Всички квартали на Пловдив
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="request-card"
+            id="zayavka"
+            role="group"
+            aria-labelledby="form-title"
+          >
+            <h2 id="form-title">Бърза заявка за помощ</h2>
+            <form id="request-form" action="#" method="post">
+              <div class="field">
+                <label for="f-name">Име</label>
+                <input
+                  id="f-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Иван Иванов"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-phone">Телефон</label>
+                <input
+                  id="f-phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                  pattern="[0-9+\s]{9,15}"
+                  placeholder="0888 123 456"
+                  title="Въведете телефонен номер, например 0888 123 456"
+                />
+              </div>
+              <div class="field">
+                <label for="f-issue">Какъв е проблемът?</label>
+                <select id="f-issue" name="issue" required>
+                  <option value="" selected disabled>
+                    Изберете от списъка
+                  </option>
+                  <option>Авария или спукана тръба</option>
+                  <option>Запушване</option>
+                  <option>Откриване на теч</option>
+                  <option>Монтаж или смяна</option>
+                  <option>Друго</option>
+                </select>
+              </div>
+              <button class="btn btn-cta btn-lg btn-block" type="submit">
+                Изпрати запитване
+              </button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <ul class="card-facts">
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-clock" /></svg
+                >Реакция до 30 минути
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-pin" /></svg
+                >Пловдив и околните села
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-shield" /></svg
+                >Гаранция за всяка работа
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <svg
+          class="hero-wave"
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M0 40c240 40 480 40 720 0s480-40 720 0v40H0z"
+            fill="#F3F8FB"
+          />
+        </svg>
+      </section>
+
+      <section id="uslugi" class="section" aria-labelledby="h-uslugi">
+        <div class="container">
+          <h2 id="h-uslugi">Услуги</h2>
+          <p class="section-intro">
+            От спукана тръба посред нощ до планиран монтаж. Всичко за
+            водопровода и канализацията във вашия дом.
+          </p>
+          <ul class="services">
+            <li class="service">
+              <span class="svc-icon"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-alert" /></svg
+              ></span>
+              <h3>Аварии и спукани тръби</h3>
+              <p>
+                Спирам водата, ограничавам щетите и ремонтирам повредата в същия
+                ден.
+              </p>
+            </li>
+            <li class="service">
+              <span class="svc-icon"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-drop" /></svg
+              ></span>
+              <h3>Отпушване на канали</h3>
+              <p>
+                Мивки, вани, сифони, тоалетни и вертикални тръби, с уред за
+                механично почистване.
+              </p>
+            </li>
+            <li class="service">
+              <span class="svc-icon"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-search" /></svg
+              ></span>
+              <h3>Откриване на течове</h3>
+              <p>
+                Намирам скрити течове с термокамера, без да къртя стени и подове
+                напразно.
+              </p>
+            </li>
+            <li class="service">
+              <span class="svc-icon"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-wrench" /></svg
+              ></span>
+              <h3>Монтаж и смяна</h3>
+              <p>
+                Смесители, бойлери, казанчета, тоалетни чинии, спирателни
+                кранове и маркучи.
+              </p>
+            </li>
+            <li class="service">
+              <span class="svc-icon"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-bath" /></svg
+              ></span>
+              <h3>Ремонт на баня</h3>
+              <p>
+                ВиК частта на основен или частичен ремонт: нови тръби, сифони и
+                свързване на уреди.
+              </p>
+            </li>
+            <li class="service">
+              <span class="svc-icon"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#i-pipe" /></svg
+              ></span>
+              <h3>Смяна на тръби</h3>
+              <p>
+                Подмяна на стари и ръждясали тръби с полипропилен (ППР) или
+                метал-пластмаса.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="za-nas"
+        class="section section-alt"
+        aria-labelledby="h-za-nas"
+      >
+        <div class="container split">
+          <div>
+            <h2 id="h-za-nas">Защо да се обадите на мен</h2>
+            <p class="section-intro">
+              Когато тече вода, нямате време да сравнявате оферти. Затова работя
+              просто: казвам какво ще направя, колко струва и кога ще е готово.
+            </p>
+          </div>
+          <ul class="checks">
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#i-check" />
+              </svg>
+              <div>
+                <strong>Идвам бързо.</strong> При авария съм на адреса до 30
+                минути в Пловдив.
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#i-check" />
+              </svg>
+              <div>
+                <strong>Казвам цената предварително.</strong> Без изненади в
+                края на работата.
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#i-check" />
+              </svg>
+              <div>
+                <strong>Работя чисто.</strong> Покривам пода, почиствам след
+                себе си и не оставям отпадъци.
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#i-check" />
+              </svg>
+              <div>
+                <strong>Давам гаранция.</strong> За работата ми и за вложените
+                материали.
+              </div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#i-check" />
+              </svg>
+              <div>
+                <strong>Работя със собствено оборудване.</strong> Термокамера и
+                професионален уред за отпушване.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="ceni" class="section" aria-labelledby="h-ceni">
+        <div class="container">
+          <h2 id="h-ceni">Цени</h2>
+          <p class="section-intro">
+            Ориентировъчни цени за най-честите поръчки. Точната сума ви казвам
+            преди да започна.
+          </p>
+          <div class="table-wrap">
+            <table class="price-table">
+              <caption class="visually-hidden">
+                Ориентировъчни цени на ВиК услугите
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Услуга</th>
+                  <th scope="col">Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Оглед и диагностика</th>
+                  <td>безплатно при поръчка</td>
+                </tr>
+                <tr>
+                  <th scope="row">Спешен изход при авария</th>
+                  <td>от 30 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Отпушване на мивка или сифон</th>
+                  <td>от 20 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Отпушване на тоалетна</th>
+                  <td>от 25 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Откриване на теч с термокамера</th>
+                  <td>от 50 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Смяна на смесител</th>
+                  <td>от 20 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Монтаж на бойлер</th>
+                  <td>от 35 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="rajoni"
+        class="section section-alt"
+        aria-labelledby="h-rajoni"
+      >
+        <div class="container">
+          <h2 id="h-rajoni">Райони, които обслужвам</h2>
+          <p class="section-intro">
+            Работя във всички квартали на Пловдив и в близките населени места.
+          </p>
+          <h3>Квартали в Пловдив</h3>
+          <ul class="tags">
+            <li>Център</li>
+            <li>Тракия</li>
+            <li>Кършияка</li>
+            <li>Смирненски</li>
+            <li>Кючук Париж</li>
+            <li>Гагарин</li>
+            <li>Остромила</li>
+            <li>Беломорски</li>
+            <li>Каменица</li>
+            <li>Съдийски</li>
+            <li>Младежки хълм</li>
+            <li>Капана</li>
+            <li>Мараша</li>
+            <li>Столипиново</li>
+            <li>Коматево</li>
+            <li>Прослав</li>
+          </ul>
+          <h3>Околни населени места</h3>
+          <ul class="tags">
+            <li>Асеновград</li>
+            <li>Марково</li>
+            <li>Куклен</li>
+            <li>Перущица</li>
+            <li>Родопи</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="vuprosi" class="section" aria-labelledby="h-vuprosi">
+        <div class="container">
+          <h2 id="h-vuprosi">Често задавани въпроси</h2>
+          <div class="faq">
+            <details>
+              <summary>Колко бързо идвате при авария?</summary>
+              <p>
+                При спешно обаждане се стремя да съм на адреса до 30 минути в
+                рамките на Пловдив. До по-отдалечените села времето е малко
+                по-дълго.
+              </p>
+            </details>
+            <details>
+              <summary>Как се определя цената?</summary>
+              <p>
+                Преди да започна, ви казвам цената за конкретната работа. Тя не
+                се променя, освен ако открия допълнителна повреда, която първо
+                обсъждаме с вас.
+              </p>
+            </details>
+            <details>
+              <summary>Давате ли гаранция?</summary>
+              <p>
+                Да. За извършената работа има гаранция, а за вложените материали
+                важи гаранцията на производителя.
+              </p>
+            </details>
+            <details>
+              <summary>Работите ли през нощта и в празници?</summary>
+              <p>
+                Да, приемам аварийни повиквания всеки ден, включително нощем, в
+                почивни и празнични дни.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="kontakti"
+        class="section section-dark"
+        aria-labelledby="h-kontakti"
+      >
+        <div class="container split">
+          <div>
+            <h2 id="h-kontakti">Обадете се. Отговарям на всяко повикване.</h2>
+            <p class="section-intro">
+              При авария звъненето е най-бързият начин. За планирани ремонти
+              може да пишете и по имейл.
+            </p>
+            <a class="btn btn-cta btn-lg" href="tel:+359888123456"
+              >Обади се сега: 0888 123 456</a
+            >
+          </div>
+          <dl class="contact-list">
+            <dt>Телефон</dt>
+            <dd><a href="tel:+359888123456">0888 123 456</a></dd>
+            <dt>Имейл</dt>
+            <dd><a href="mailto:info@example.com">info@example.com</a></dd>
+            <dt>Работно време</dt>
+            <dd>Всеки ден, включително нощем и на празници</dd>
+            <dt>Район</dt>
+            <dd>Пловдив и околните населени места</dd>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © 2026 Аква Майстор, Пловдив. Демо сайт за портфолио, данните са
+          примерни.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
