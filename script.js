@@ -6,7 +6,44 @@
   const header = document.querySelector('.site-header');
   const toggle = header.querySelector('.nav-toggle');
   const nav = document.getElementById('site-nav');
+  const call = header.querySelector('.header-call');
+  const navList = nav.querySelector('.nav-list');
   const links = [...nav.querySelectorAll('a[href^="#"]')];
+
+  /* ----- Hero CTA според оформлението ----- */
+  const heroSecondary = document.querySelector('.hero-secondary');
+  const heroSecondaryLabel = heroSecondary.querySelector(
+    '.hero-secondary-label',
+  );
+  const heroTwoColumns = window.matchMedia('(min-width: 900px)');
+  const setHeroSecondary = () => {
+    if (heroTwoColumns.matches) {
+      heroSecondary.href = '#uslugi';
+      heroSecondaryLabel.textContent = 'Научи повече';
+    } else {
+      heroSecondary.href = '#zayavka';
+      heroSecondaryLabel.textContent = 'Направи запитване';
+    }
+  };
+
+  setHeroSecondary();
+  heroTwoColumns.addEventListener('change', setHeroSecondary);
+
+  /* ----- CTA в мобилното меню ----- */
+  const callItem = document.createElement('li');
+  const mobileCall = window.matchMedia('(max-width: 520px)');
+  const setCallLocation = () => {
+    if (mobileCall.matches) {
+      callItem.append(call);
+      navList.append(callItem);
+    } else {
+      toggle.before(call);
+      callItem.remove();
+    }
+  };
+
+  setCallLocation();
+  mobileCall.addEventListener('change', setCallLocation);
 
   /* ----- Мобилно меню ----- */
   const setMenu = (open) => {

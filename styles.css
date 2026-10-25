@@ -278,7 +278,7 @@ svg {
   transform: rotate(-45deg);
 }
 
-@media (min-width: 860px) {
+@media (min-width: 990px) {
   .nav,
   .js .nav {
     position: static;
@@ -306,6 +306,17 @@ svg {
   }
   .nav-toggle {
     display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav-list .header-call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 2.5rem);
+    margin: 0.5rem 1.25rem;
+    border: 0;
   }
 }
 
@@ -375,6 +386,16 @@ svg {
   gap: 0.75rem;
   margin: 1.75rem 0;
 }
+.hero-secondary-icon {
+  display: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 .trust-list {
   list-style: none;
@@ -401,9 +422,19 @@ svg {
   display: block;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 602px) {
   .trust-list {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 987px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
   }
 }
 @media (min-width: 900px) {
@@ -414,8 +445,32 @@ svg {
     grid-template-columns: 1.15fr 0.85fr;
     gap: 3.5rem;
   }
+  .hero-secondary-icon {
+    display: block;
+  }
 }
 
+@media (max-width: 900px) {
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 601px) {
+  .trust-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 340px) {
+  .btn {
+    font-size: 0.99rem;
+  }
+}
 /* ---------- Карта със заявка ---------- */
 .request-card {
   background: #fff;
@@ -627,6 +682,33 @@ svg {
   border-bottom: 0;
 }
 
+@media (max-width: 440px) {
+  .price-table {
+    min-width: 0;
+    table-layout: fixed;
+  }
+  .price-table th,
+  .price-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .price-table tr > :first-child {
+    padding-left: 0.75rem;
+  }
+  .price-table tr > :last-child {
+    padding-right: 0.75rem;
+  }
+  .price-table th:first-child {
+    width: 64%;
+  }
+  .price-table th:last-child {
+    width: 36%;
+  }
+  .price-table td {
+    white-space: normal;
+  }
+}
+
 /* Райони */
 .tags {
   list-style: none;
@@ -723,6 +805,65 @@ svg {
 }
 .site-footer p {
   margin: 0;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 90;
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cta);
+  color: var(--cta-text);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s;
+}
+.back-to-top:hover {
+  background: var(--cta-hover);
+}
+.back-to-top:focus-visible {
+  outline-color: var(--aqua-light);
+}
+.back-to-top svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.quick-call {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .quick-call {
+    position: fixed;
+    right: 1.25rem;
+    bottom: calc(1.25rem + 3rem + 0.75rem);
+    z-index: 90;
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--cta);
+    color: var(--cta-text);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s;
+  }
+  .quick-call:hover {
+    background: var(--cta-hover);
+  }
+  .quick-call:focus-visible {
+    outline-color: var(--aqua-light);
+  }
 }
 
 /* ---------- Намалено движение ---------- */
